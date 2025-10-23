@@ -254,7 +254,7 @@ export const NavbarLogo = () => {
       href="/"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1"
     >
-      <div className="relative w-[90px] h-[50px]">
+      <div className="relative w-[80px] h-[35px]">
         <Image
           src={logo}
           alt="logo"
