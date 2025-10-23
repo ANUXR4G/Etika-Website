@@ -270,15 +270,6 @@ export default function HomePage() {
             ))}
           </motion.div>
         </div>
-        
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <a 
-            href="/contact" 
-            className="pointer-events-auto px-8 py-4 rounded-full bg-primary text-primary-foreground font-semibold text-lg shadow-2xl hover:scale-105 hover:shadow-accent/50 transition-all duration-300 border-2 border-primary-foreground/20"
-          >
-            Get in touch
-          </a>
-        </div>
       </section>
     </>
   )
