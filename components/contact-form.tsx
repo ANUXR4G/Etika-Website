@@ -27,7 +27,7 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} className="floating-card p-6 grid gap-4">
+    <form onSubmit={onSubmit} className="p-4 grid gap-4 bg-[#cee7ad]">
       <div className="grid md:grid-cols-2 gap-4">
         <div className="grid gap-1">
           <label htmlFor="name" className="text-sm">
