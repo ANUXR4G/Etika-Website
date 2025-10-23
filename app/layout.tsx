@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable} antialiased`}>
       <body className="font-sans bg-background text-foreground">
         <Suspense fallback={<div>Loading...</div>}>
-          <div className="min-h-dvh flex flex-col">
+          <div className=" flex flex-col">
             <SiteHeader />
             <main className="flex-1">{children}</main>
             <SiteFooter />
