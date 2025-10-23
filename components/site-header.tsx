@@ -93,7 +93,7 @@ export function SiteHeader() {
 
 const DummyContent = () => {
   return (
-    <div className="container mx-auto p-8 pt-12">
+    <div>
     
     </div>
   );

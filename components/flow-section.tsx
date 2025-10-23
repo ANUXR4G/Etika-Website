@@ -1,58 +1,90 @@
-import type { ReactNode } from "react"
+"use client"
 
-type Item = {
+import { motion } from "framer-motion"
+import Image from "next/image"
+
+interface FlowItem {
   title: string
   description: string
-  cta?: ReactNode
   imageAlt: string
   imageQuery: string
+  imageSrc?: any // For local images
 }
 
-export function FlowSection({ items, heading, sub }: { items: Item[]; heading: string; sub?: string }) {
+interface FlowSectionProps {
+  heading: string
+  sub: string
+  items: FlowItem[]
+}
+
+export function FlowSection({ heading, sub, items }: FlowSectionProps) {
   return (
-    <section className="relative py-16 lg:py-24">
+    <section className="relative py-20 overflow-hidden bg-background">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="max-w-2xl">
-          <h2 className="text-3xl sm:text-4xl font-semibold text-balance">{heading}</h2>
-          {sub ? <p className="mt-3 text-foreground/70">{sub}</p> : null}
-        </div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+            {heading}
+          </h2>
+          <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
+            {sub}
+          </p>
+        </motion.div>
 
-        <div className="relative mt-12 grid gap-10 lg:grid-cols-3">
-          {items.map((it, i) => (
-            <article key={i} className="relative flex flex-col items-center">
-              <div className="mx-auto w-48 h-48 rounded-full overflow-hidden ring-4 ring-accent/50 bg-card shrink-0">
-                <img
-                  src={`/.jpg?key=o2oq0&height=320&width=320&query=${encodeURIComponent(it.imageQuery)}`}
-                  alt={it.imageAlt}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="mt-6 floating-card p-6 w-full">
-                <h3 className="font-semibold text-lg text-center">{it.title}</h3>
-                <p className="text-sm text-foreground/70 mt-2 text-center">{it.description}</p>
-                {it.cta ? <div className="mt-4 flex justify-center">{it.cta}</div> : null}
-              </div>
-            </article>
-          ))}
+        <div className="relative">
+          {/* Connecting dashed line */}
+          <div className="absolute top-1/2 left-0 right-0 h-0.5 border-t-2 border-dashed border-primary/30 -translate-y-1/2 hidden lg:block" />
 
-          {/* SVG curved flow connector with extended left and right curves */}
-          <svg
-            className="pointer-events-none absolute inset-0 -z-10 hidden lg:block"
-            viewBox="0 0 1400 300"
-            preserveAspectRatio="xMidYMid meet"
-            aria-hidden="true"
-            style={{ left: '-100px', right: '-100px', width: 'calc(100% + 200px)' }}
-          >
-            <path 
-              className="flow-path" 
-              d="M 0 150 C 80 60, 120 200, 300 96 C 400 180, 440 10, 700 96 C 960 180, 1000 10, 1100 96 C 1280 200, 1320 60, 1400 150" 
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeOpacity="0.3"
-              strokeLinecap="round"
-            />
-          </svg>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-4">
+            {items.map((item, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: idx * 0.2 }}
+                className="relative flex flex-col items-center"
+              >
+                {/* Circle with image */}
+                <div className="relative w-48 h-48 mb-8 group">
+                  <div className="absolute inset-0 rounded-full border-4 border-primary bg-background shadow-lg group-hover:scale-105 transition-transform duration-300" />
+                  <div className="absolute inset-4 rounded-full overflow-hidden">
+                    {item.imageSrc ? (
+                      <Image
+                        src={item.imageSrc}
+                        alt={item.imageAlt}
+                        fill
+                        className="object-cover"
+                      />
+                    ) : (
+                      <img
+                        src={`https://source.unsplash.com/400x400/?${item.imageQuery}`}
+                        alt={item.imageAlt}
+                        className="w-full h-full object-cover"
+                      />
+                    )}
+                  </div>
+                  {/* Label */}
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary px-4 py-1 rounded-full whitespace-nowrap text-sm font-medium text-primary-foreground shadow-md">
+                    {item.title.split(" ").slice(-2).join(" ")}
+                  </div>
+                </div>
+
+                {/* Card */}
+                <div className="floating-card p-6 rounded-2xl text-center max-w-sm bg-card border border-border">
+                  <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
+                  <p className="text-sm text-foreground/70 leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

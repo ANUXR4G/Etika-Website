@@ -3,6 +3,10 @@
 import { motion } from "framer-motion"
 import { Hero } from "@/components/hero"
 import { FlowSection } from "@/components/flow-section"
+import Image from "next/image"
+import circulareconomy from "@/public/circulareconomy.png"
+import Renewable from "@/public/renewable.png"
+import agri from "@/public/agri.png"
 
 export default function HomePage() {
   const features = [
@@ -79,22 +83,26 @@ export default function HomePage() {
             title: "The Circular Economy",
             description:
               "We source and supply top‑quality recyclable metals and non‑metals, contributing directly to waste reduction and resource efficiency.",
-            imageAlt: "Recyclable metals and non‑metals",
-            imageQuery: "Recyclable%20metals%20and%20non-metals%20close-up",
+            imageAlt: "Circular Economy",
+            imageQuery: "recycling-circular-economy",
+            imageSrc: circulareconomy,
           },
           {
             title: "Renewable Resources",
             description:
               "We provide responsibly managed pine wood logs, ensuring a continuous supply of sustainable wood for global needs.",
             imageAlt: "Pine wood logs",
-            imageQuery: "Pine%20wood%20logs%20stack",
+            imageQuery: "pine-wood-logs",
+            imageSrc: Renewable,
           },
           {
             title: "Agricultural Excellence",
             description:
               "We trade premium agricultural products — specifically high‑quality bananas — supporting ethical and sustainable farming.",
-            imageAlt: "Bananas",
-            imageQuery: "Premium%20bananas%20still%20life",
+            imageAlt: "Fresh Bananas",
+            imageQuery: "fresh-bananas-agriculture",
+            imageSrc: agri,
+
           },
         ]}
       />
@@ -151,6 +159,25 @@ export default function HomePage() {
             </h2>
             <div className="mx-auto h-1 w-24 bg-gradient-to-r from-accent via-primary to-accent rounded-full" />
           </motion.div>
+
+          <div className="flex justify-center mb-16">
+            <motion.div
+              animate={{ rotate: 360 }}
+              transition={{
+                duration: 20,
+                repeat: Infinity,
+                ease: "linear"
+              }}
+              className="relative w-48 h-48 sm:w-64 sm:h-64"
+            >
+              <Image
+                src={circulareconomy}
+                alt="Circular Economy"
+                fill
+                className="object-contain"
+              />
+            </motion.div>
+          </div>
 
           <motion.div
             variants={container}
