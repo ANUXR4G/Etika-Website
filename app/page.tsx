@@ -160,25 +160,7 @@ export default function HomePage() {
             <div className="mx-auto h-1 w-24 bg-gradient-to-r from-accent via-primary to-accent rounded-full" />
           </motion.div>
 
-          <div className="flex justify-center mb-16">
-            <motion.div
-              animate={{ rotate: 360 }}
-              transition={{
-                duration: 20,
-                repeat: Infinity,
-                ease: "linear"
-              }}
-              className="relative w-48 h-48 sm:w-64 sm:h-64"
-            >
-              <Image
-                src={circulareconomy}
-                alt="Circular Economy"
-                fill
-                className="object-contain"
-              />
-            </motion.div>
-          </div>
-
+       
           <motion.div
             variants={container}
             initial="hidden"
@@ -196,11 +178,11 @@ export default function HomePage() {
                 }}
                 className="group relative"
               >
-                <div className="absolute -inset-1 bg-gradient-to-r from-accent/30 via-primary/30 to-accent/30 rounded-2xl opacity-0 group-hover:opacity-100 blur-xl transition-all duration-500" />
+                <div className="absolute -inset-1 rounded-2xl opacity-0 transition-all duration-500" />
                 
                 <div className="relative floating-card p-8 h-full rounded-2xl border border-border/40 group-hover:border-accent/50 transition-all duration-500 bg-card/80 backdrop-blur-sm">
                   <div className="mb-6 relative">
-                    <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-primary/20 rounded-xl blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute inset-0 duration-500" />
                     <div className="relative w-14 h-14 rounded-xl bg-gradient-to-br from-accent/10 to-primary/10 flex items-center justify-center text-accent group-hover:scale-110 group-hover:rotate-3 transition-all duration-500">
                       {feature.icon}
                     </div>
