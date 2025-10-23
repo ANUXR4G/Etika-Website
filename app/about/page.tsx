@@ -1,3 +1,5 @@
+import TimelinePage from "@/components/timeline";
+
 export default function AboutPage() {
   return (
     <>
@@ -121,24 +123,7 @@ export default function AboutPage() {
       <section className="section-muted py-14">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-semibold">Milestones</h2>
-          <ol className="mt-6 grid md:grid-cols-4 gap-6 text-sm">
-            <li className="floating-card p-5">
-              <strong>2017</strong>
-              <p className="mt-2 text-foreground/70">Founded with a mission to align commerce with ethics.</p>
-            </li>
-            <li className="floating-card p-5">
-              <strong>2019</strong>
-              <p className="mt-2 text-foreground/70">Established renewable timber partnerships.</p>
-            </li>
-            <li className="floating-card p-5">
-              <strong>2022</strong>
-              <p className="mt-2 text-foreground/70">Expanded agri trade with export‑grade bananas.</p>
-            </li>
-            <li className="floating-card p-5">
-              <strong>Today</strong>
-              <p className="mt-2 text-foreground/70">Global network powering sustainable growth.</p>
-            </li>
-          </ol>
+          <TimelinePage />
         </div>
       </section>
 
