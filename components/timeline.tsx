@@ -99,28 +99,28 @@ export default function EtikaAboutPage() {
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=800&q=80"
+              src="https://www.actionmetalsrecyclers.com/wp-content/uploads/2021/11/advantages-recycling-scrap-metal.jpg"
               alt="Recycled metal materials"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="https://images.unsplash.com/photo-1625231334168-35067f8853ed?w=800&q=80"
+              src="https://www.gardencityironandmetal.com/blog/wp-content/uploads/2023/08/Scrap-Metal-Recycling-Company-Near-Me-Indianapolis.jpg"
               alt="Metal recycling process"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?w=800&q=80"
+              src="https://www.shutterstock.com/shutterstock/videos/3692612745/thumb/1.jpg?ip=x480"
               alt="Sustainable material processing"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="https://images.unsplash.com/photo-1604187351574-c75ca79f5807?w=800&q=80"
+              src="https://www.shutterstock.com/shutterstock/videos/1082248547/thumb/1.jpg?ip=x480"
               alt="Industrial recycling facility"
               width={500}
               height={500}
@@ -149,14 +149,14 @@ export default function EtikaAboutPage() {
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="https://images.unsplash.com/photo-1609766975127-f7e9f48fab88?w=800&q=80"
+              src="https://media.istockphoto.com/id/901879786/photo/log-stacks-along-the-forest-road.jpg?s=612x612&w=0&k=20&c=tWWpff8RBPVMiEenMooVf4yfFP9smdPfBQr-82dwZis="
               alt="Stacked pine wood logs"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="https://images.unsplash.com/photo-1551438248-880013bbfd95?w=800&q=80"
+              src="https://naturalmineralwaterseurope.org/wp-content/uploads/2022/02/shutterstock_1798719079-1200x675.jpg"
               alt="Sustainable forestry management"
               width={500}
               height={500}
@@ -199,28 +199,28 @@ export default function EtikaAboutPage() {
           </div>
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=800&q=80"
+              src="https://media.istockphoto.com/id/1330394428/photo/banana-plantation-trees-panoramic-view-of-banana-plantation-in-the-french-west-indies-under.jpg?s=612x612&w=0&k=20&c=d1TkhxbI2GHlQrfGtwdceGKrAQ5umVrvkc6AznxfYG0="
               alt="Banana plantation"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="https://images.unsplash.com/photo-1603833665858-e61d17a86224?w=800&q=80"
+              src="https://media.istockphoto.com/id/893500976/photo/excited-about-feeding-the-growing-population.jpg?s=612x612&w=0&k=20&c=kPcx6pM6DdiUtDZVbOCoe53jaHH31d1Rc-QgU2rv1TM="
               alt="Fresh banana harvest"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="https://images.unsplash.com/photo-1528825871115-3581a5387919?w=800&q=80"
+              src="https://media.istockphoto.com/id/1292129506/photo/scenic-view-of-banana-plantation-on-tenerifa-against-sky.jpg?s=612x612&w=0&k=20&c=28dp-1VTZTNWSMBZLZFbkTu56tRXLOhCn-9BIc1Y14U="
               alt="Sustainable banana farming"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?w=800&q=80"
+              src="https://static.vecteezy.com/system/resources/previews/030/683/210/large_2x/bananas-high-quality-4k-hdr-free-photo.jpg"
               alt="Premium quality bananas"
               width={500}
               height={500}
