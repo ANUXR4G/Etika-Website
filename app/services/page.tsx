@@ -1,4 +1,7 @@
-import { FlowSection } from "@/components/flow-section"
+import { FlowSection } from "@/components/flow-section";
+import renewable from "@/public/renewable.png";
+import agri from "@/public/agri.png";
+import circulareconomy from "@/public/circulareconomy.png";
 
 export default function ServicesPage() {
   return (
@@ -14,6 +17,7 @@ export default function ServicesPage() {
 
       <FlowSection
         heading="How We Power Sustainable Growth"
+        sub="A singular source for powering your sustainable growth."
         items={[
           {
             title: "Recyclables Supply",
@@ -21,6 +25,7 @@ export default function ServicesPage() {
               "Sourcing metals and non‑metals for the circular economy with strict quality verification and traceability.",
             imageAlt: "Recyclable metal scrap close-up",
             imageQuery: "Recyclable%20metal%20scrap%20macro",
+            imageSrc: circulareconomy,
           },
           {
             title: "Renewable Timber",
@@ -28,12 +33,14 @@ export default function ServicesPage() {
               "Responsibly managed pine wood logs with sustainable forestry partners and transparent chain‑of‑custody.",
             imageAlt: "Sustainable pine timber",
             imageQuery: "Sustainable%20pine%20timber%20forest",
+            imageSrc: renewable,
           },
           {
             title: "Agri Trade",
             description: "Premium bananas sourced from farms aligned with ethical labor and environmental practices.",
             imageAlt: "Banana farms",
             imageQuery: "Banana%20plantation%20aerial",
+            imageSrc: agri,
           },
         ]}
       />
@@ -48,7 +55,7 @@ export default function ServicesPage() {
               ["Green Logistics", "Optimized routes and recycled packaging."],
               ["Compliance", "Aligned with environmental and labor standards."],
             ].map(([title, desc]) => (
-              <div key={title} className="floating-card p-6">
+              <div key={title} className="floating-card p-6 border border-border/40 rounded-2xl hover:border-accent/50 transition-all duration-300">
                 <h3 className="font-medium">{title}</h3>
                 <p className="text-sm text-foreground/70 mt-2">{desc}</p>
               </div>
@@ -67,7 +74,7 @@ export default function ServicesPage() {
               ["3. Logistics", "Efficient, low‑impact transport."],
               ["4. Delivery", "On-time arrival with full records."],
             ].map(([t, d]) => (
-              <div key={t} className="floating-card p-5">
+              <div key={t} className="floating-card p-5 border border-border/40 rounded-2xl hover:border-accent/50 transition-all duration-300">
                 <strong>{t}</strong>
                 <p className="mt-2 text-foreground/70">{d}</p>
               </div>
@@ -76,5 +83,5 @@ export default function ServicesPage() {
         </div>
       </section>
     </>
-  )
+  );
 }
