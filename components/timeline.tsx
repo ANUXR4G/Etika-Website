@@ -39,11 +39,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     >
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
         <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
-          Changelog from my journey
+          Our Story: Ethical Sourcing for a Sustainable Future
         </h2>
-        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
-          I&apos;ve been working on Aceternity for the past 2 years. Here&apos;s
-          a timeline of my journey.
+        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-3xl">
+          At Etika Pvt Ltd, our mission is to drive sustainable growth by providing a diverse range of high-quality materials. The name &quot;Etika&quot; embodies the ethical and responsible approach we bring to every aspect of our business.
         </p>
       </div>
 
@@ -89,40 +88,40 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   );
 };
 
-export default function TimelinePage() {
+export default function EtikaAboutPage() {
   const data = [
     {
-      title: "2024",
+      title: "The Circular Economy",
       content: (
         <div>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+            We source and supply top-quality recyclable metals and non-metals, contributing directly to waste reduction and resource efficiency. Our commitment to the circular economy helps create a sustainable future for generations to come.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="https://assets.aceternity.com/templates/startup-1.webp"
-              alt="startup template"
+              src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=800&q=80"
+              alt="Recycled metal materials"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="https://assets.aceternity.com/templates/startup-2.webp"
-              alt="startup template"
+              src="https://images.unsplash.com/photo-1625231334168-35067f8853ed?w=800&q=80"
+              alt="Metal recycling process"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="https://assets.aceternity.com/templates/startup-3.webp"
-              alt="startup template"
+              src="https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?w=800&q=80"
+              alt="Sustainable material processing"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="https://assets.aceternity.com/templates/startup-4.webp"
-              alt="startup template"
+              src="https://images.unsplash.com/photo-1604187351574-c75ca79f5807?w=800&q=80"
+              alt="Industrial recycling facility"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
@@ -132,42 +131,40 @@ export default function TimelinePage() {
       ),
     },
     {
-      title: "Early 2023",
+      title: "Renewable Resources",
       content: (
         <div>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            I usually run out of copy, but when I see content this big, I try to
-            integrate lorem ipsum.
+            We provide responsibly managed pine wood logs, ensuring a continuous supply of sustainable wood for global needs. Our forestry practices prioritize environmental conservation and reforestation.
           </p>
           <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            Lorem ipsum is for people who are too lazy to write copy. But we are
-            not. Here are some more example of beautiful designs I built.
+            Each log is sourced from certified sustainable forests, supporting biodiversity and ecosystem health while meeting the demands of modern construction and manufacturing industries.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="hero template"
+              src="https://images.unsplash.com/photo-1473773508845-188df298d2d1?w=800&q=80"
+              alt="Pine forest sustainable logging"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="https://assets.aceternity.com/features-section.png"
-              alt="feature template"
+              src="https://images.unsplash.com/photo-1609766975127-f7e9f48fab88?w=800&q=80"
+              alt="Stacked pine wood logs"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="https://assets.aceternity.com/pro/bento-grids.png"
-              alt="bento template"
+              src="https://images.unsplash.com/photo-1551438248-880013bbfd95?w=800&q=80"
+              alt="Sustainable forestry management"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="https://assets.aceternity.com/cards.png"
-              alt="cards template"
+              src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&q=80"
+              alt="Wood processing facility"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
@@ -177,54 +174,54 @@ export default function TimelinePage() {
       ),
     },
     {
-      title: "Changelog",
+      title: "Agricultural Excellence",
       content: (
         <div>
           <p className="mb-4 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            Deployed 5 new components on Aceternity today
+            We trade in premium agricultural products, specifically high-quality bananas, supporting ethical and sustainable farming practices worldwide.
           </p>
           <div className="mb-8">
             <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Card grid component
+              ✅ Direct partnerships with ethical farmers
             </div>
             <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Startup template Aceternity
+              ✅ Quality assurance at every stage
             </div>
             <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Random file upload lol
+              ✅ Fair trade practices and pricing
             </div>
             <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Himesh Reshammiya Music CD
+              ✅ Sustainable farming techniques
             </div>
             <div className="flex items-center gap-2 text-xs text-neutral-700 md:text-sm dark:text-neutral-300">
-              ✅ Salman Bhai Fan Club registrations open
+              ✅ Global distribution network
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">
             <img
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="hero template"
+              src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=800&q=80"
+              alt="Banana plantation"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="https://assets.aceternity.com/features-section.png"
-              alt="feature template"
+              src="https://images.unsplash.com/photo-1603833665858-e61d17a86224?w=800&q=80"
+              alt="Fresh banana harvest"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="https://assets.aceternity.com/pro/bento-grids.png"
-              alt="bento template"
+              src="https://images.unsplash.com/photo-1528825871115-3581a5387919?w=800&q=80"
+              alt="Sustainable banana farming"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
             />
             <img
-              src="https://assets.aceternity.com/cards.png"
-              alt="cards template"
+              src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?w=800&q=80"
+              alt="Premium quality bananas"
               width={500}
               height={500}
               className="h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60"
@@ -238,6 +235,18 @@ export default function TimelinePage() {
   return (
     <div className="relative w-full overflow-clip">
       <Timeline data={data} />
+      
+      {/* Partner with Etika Section */}
+      <div className="w-full bg-[#e6ede4] py-20 px-4 md:px-8 lg:px-10">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-2xl md:text-4xl font-bold text-black dark:text-white mb-6">
+            Partner with Etika
+          </h2>
+          <p className="text-neutral-700 dark:text-neutral-300 text-base md:text-lg leading-relaxed">
+            When you choose Etika, you&apos;re not just getting quality materials; you are partnering with a company committed to an ethical supply chain and a healthier environment. Our diverse material base ensures we are a singular source for powering your sustainable growth.
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
