@@ -308,7 +308,7 @@ export default function AboutPage() {
             {[...Array(4)].map((_, i) => (
               <div key={i} className="flex items-center gap-8 px-8">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-foreground to-foreground/60 bg-clip-text text-transparent">
-                  Partner with Etika
+                  Let's build a greener supply chain
                 </h2>
                 <div className="w-3 h-3 rounded-full bg-primary" />
               </div>

@@ -43,7 +43,7 @@ export function SiteHeader() {
           <div className="flex items-center gap-4">
          
             <NavbarButton 
-              variant="primary"
+              className="bg-[#104927] text-white"
               onClick={() => router.push("/contact")}
             >
               Contact Us
@@ -81,8 +81,7 @@ export function SiteHeader() {
                   setIsMobileMenuOpen(false);
                   router.push("/contact");
                 }}
-                variant="primary"
-                className="w-full"
+                className="w-full bg-[#104927]"
               >
                 Contact Us
               </NavbarButton>
